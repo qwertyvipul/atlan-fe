@@ -6,7 +6,7 @@ export default function SelectButton(props) {
         <Button
             variant="contained"
             onClick={props.onClick}
-            style={{ width: "96px", minWidth: "96px" }}
+            style={{ width: "96px" }}
         >
             Select
         </Button>

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
+import { DataGrid } from "@mui/x-data-grid";
 
 import queries from "../../data/queries";
-import { DataGrid } from "@mui/x-data-grid";
 
 export default React.memo(function SBGrid(props) {
     const results = queries[props.queryID].results.map((result, _idx) => ({
@@ -11,12 +11,6 @@ export default React.memo(function SBGrid(props) {
     const result = results[0];
 
     const columns = Object.keys(result).map((key) => {
-        if (key === "_idx") {
-            return {
-                field: key,
-                headerName: "Hey",
-            };
-        }
         return {
             field: key,
             headerName: key,
