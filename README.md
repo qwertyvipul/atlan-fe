@@ -13,8 +13,10 @@ npx create-react-app atlan-fe
 # Clean un-necessary code
 # Install MUI
 npm install @mui/material @emotion/react @emotion/styled
+
+# Install MUI X Data Grid
+npm install @mui/x-data-grid
+
+# Syntax highlighter
+npm install react-syntax-highlighter
 ```
-
-## Questions
-
-1. [ ] Do I have a good reason to wrap components inside a box?
