@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 import queries from "../../data/queries";
 import { DataGrid } from "@mui/x-data-grid";
 
-export default function SBGrid(props) {
+export default React.memo(function SBGrid(props) {
     const results = queries[props.queryID].results.map((result, _idx) => ({
         _idx: _idx,
         ...result,
@@ -49,4 +49,4 @@ export default function SBGrid(props) {
             />
         </div>
     );
-}
+});
