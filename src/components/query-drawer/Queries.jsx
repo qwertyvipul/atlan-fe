@@ -2,6 +2,9 @@ import React from "react";
 import { Paper, Box, Stack } from "@mui/material";
 import QDQuery from "./QDQuery";
 
+import queries from "../../data/data";
+console.log({ queries });
+
 export default function Queries(props) {
     return (
         <div>
@@ -17,6 +20,16 @@ export default function Queries(props) {
                 }}
             >
                 <Stack>
+                    {queries.map(({ id, query, results }) => {
+                        return (
+                            <QDQuery
+                                key={id}
+                                id={id}
+                                query={query}
+                                onQuerySelect={props.onQuerySelect}
+                            />
+                        );
+                    })}
                     <QDQuery
                         query={`SELECT Orders.OrderID, Customers.CustomerName,
                         Orders.OrderDate FROM Orders INNER JOIN Customers ON
