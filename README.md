@@ -2,7 +2,7 @@
 
 -   [Website](http://atlan-fe.qwertyvipul.io/)
 -   [GitHub](https://github.com/qwertyvipul/atlan-fe)
--   [Brainstorming, design and though process](https://lucid.app/lucidchart/75d0fab6-2f30-4fc9-a156-71f42374e7be/view)
+-   [Brainstorming, design and thought process](https://lucid.app/lucidchart/75d0fab6-2f30-4fc9-a156-71f42374e7be/view)
 
 ## Development
 
