@@ -2,8 +2,7 @@ import React from "react";
 import { Paper, Box, Stack } from "@mui/material";
 import QDQuery from "./QDQuery";
 
-import queries from "../../data/data";
-console.log({ queries });
+import queries from "../../data/queries";
 
 export default function Queries(props) {
     return (
@@ -20,40 +19,15 @@ export default function Queries(props) {
                 }}
             >
                 <Stack>
-                    {queries.map(({ id, query, results }) => {
+                    {Object.keys(queries).map((id) => {
                         return (
                             <QDQuery
                                 key={id}
-                                id={id}
-                                query={query}
+                                queryID={id}
                                 onQuerySelect={props.onQuerySelect}
                             />
                         );
                     })}
-                    <QDQuery
-                        query={`SELECT Orders.OrderID, Customers.CustomerName,
-                        Orders.OrderDate FROM Orders INNER JOIN Customers ON
-                        Orders.CustomerID=Customers.CustomerID;`}
-                        onQuerySelect={props.onQuerySelect}
-                    />
-                    <QDQuery
-                        query={`SELECT Orders.OrderID, Customers.CustomerName,
-                        Orders.OrderDate FROM Orders INNER JOIN Customers ON
-                        Orders.CustomerID=Customers.CustomerID;`}
-                        onQuerySelect={props.onQuerySelect}
-                    />
-                    <QDQuery
-                        query={`SELECT Orders.OrderID, Customers.CustomerName,
-                        Orders.OrderDate FROM Orders INNER JOIN Customers ON
-                        Orders.CustomerID=Customers.CustomerID;`}
-                        onQuerySelect={props.onQuerySelect}
-                    />
-                    <QDQuery
-                        query={`SELECT Orders.OrderID, Customers.CustomerName,
-                        Orders.OrderDate FROM Orders INNER JOIN Customers ON
-                        Orders.CustomerID=Customers.CustomerID;`}
-                        onQuerySelect={props.onQuerySelect}
-                    />
                 </Stack>
             </Box>
         </div>

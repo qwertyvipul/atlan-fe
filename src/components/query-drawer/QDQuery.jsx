@@ -1,6 +1,7 @@
 import React from "react";
 import { Stack, Paper } from "@mui/material";
 import SelectButton from "./SelectButton";
+import queries from "../../data/queries";
 
 export default function QDQuery(props) {
     return (
@@ -10,9 +11,9 @@ export default function QDQuery(props) {
                 justifyContent={"space-between"}
                 alignItems={"center"}
             >
-                <div>{props.query}</div>
+                <div>{queries[props.queryID]["query"]}</div>
                 <SelectButton
-                    onClick={() => props.onQuerySelect(props.query)}
+                    onClick={() => props.onQuerySelect(props.queryID)}
                 />
             </Stack>
         </Paper>

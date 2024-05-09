@@ -7,15 +7,19 @@ import SiteBody from "./components/SiteBody";
 import QueryDrawer from "./components/query-drawer/QueryDrawer";
 
 function App() {
-    const [query, setQuery] = useState(null);
+    const [queryID, setQueryID] = useState(null);
     const [showDrawer, setShowDrawer] = useState(false);
 
     const openDrawer = () => {
         setShowDrawer(true);
     };
 
-    const handleQuerySelect = (query) => {
-        setQuery(query);
+    const closeDrawer = () => {
+        setShowDrawer(false);
+    };
+
+    const handleQuerySelect = (id) => {
+        setQueryID(id);
         setShowDrawer(false);
     };
 
@@ -29,9 +33,9 @@ function App() {
             >
                 <Container maxWidth="md" style={{ background: "yellow" }}>
                     <Stack>
-                        <SiteHeader onQueryButtonClick={openDrawer} />
+                        <SiteHeader openDrawer={openDrawer} />
                         <SiteBody
-                            query={query}
+                            queryID={queryID}
                             isDrawerOpen={showDrawer}
                             openDrawer={openDrawer}
                         />
@@ -40,7 +44,7 @@ function App() {
             </div>
             {showDrawer && (
                 <QueryDrawer
-                    onClose={() => setShowDrawer(false)}
+                    onClose={closeDrawer}
                     onQuerySelect={handleQuerySelect}
                 />
             )}

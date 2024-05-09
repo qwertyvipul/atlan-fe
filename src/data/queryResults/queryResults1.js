@@ -1,5 +1,4 @@
 export default {
-    id: 1,
     query: "SELECT * FROM Customers;",
     results: [
         {

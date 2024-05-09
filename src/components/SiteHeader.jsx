@@ -8,7 +8,7 @@ export default function SiteHeader(props) {
         <div style={{ padding: "1rem 0", borderBottom: "1px solid black" }}>
             <Stack direction={"row"} justifyContent={"space-between"}>
                 <SiteLogo />
-                <QueryButton onClick={props.onQueryButtonClick} />
+                <QueryButton onClick={props.openDrawer} />
             </Stack>
         </div>
     );

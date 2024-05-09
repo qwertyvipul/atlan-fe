@@ -5,12 +5,12 @@ import QueryAndGrid from "./site-body/QueryAndGrid";
 export default function SiteBody(props) {
     return (
         <div style={{ height: "100%" }}>
-            {props.query === null ? (
+            {props.queryID === null ? (
                 <div style={{ textAlign: "center", padding: "1rem 0" }}>
                     <GetStartedButton onClick={props.openDrawer} />
                 </div>
             ) : (
-                <QueryAndGrid query={props.query} />
+                <QueryAndGrid queryID={props.queryID} />
             )}
         </div>
     );
