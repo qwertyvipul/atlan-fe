@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import SiteLogo from "./SiteLogo";
 import QueryButton from "./buttons/QueryButton";
 

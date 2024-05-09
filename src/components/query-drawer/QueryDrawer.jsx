@@ -1,7 +1,7 @@
 import React from "react";
 import { Drawer } from "@mui/material";
 import QDFooter from "./QDFooter";
-import { Box, Container, Stack } from "@mui/material";
+import { Container, Stack } from "@mui/material";
 import Queries from "./Queries";
 
 export default function QueryDrawer(props) {

@@ -1,4 +1,4 @@
-export default {
+const queryResults = {
     query: "SELECT * FROM Customers;",
     results: [
         {
@@ -93,3 +93,5 @@ export default {
         },
     ],
 };
+
+export default queryResults;

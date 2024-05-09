@@ -1,4 +1,4 @@
-export default {
+const queryResults = {
     query: "SELECT * FROM big_table",
     results: Array(1000000)
         .fill(null)
@@ -7,3 +7,5 @@ export default {
             CustomerName: `Name ${idx}`,
         })),
 };
+
+export default queryResults;

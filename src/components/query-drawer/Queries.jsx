@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Box, Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import QDQuery from "./QDQuery";
 
 import queries from "../../data/queries";

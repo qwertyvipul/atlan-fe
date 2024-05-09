@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { useState } from "react";
-import { Box, Container, Stack } from "@mui/material";
+import { Container, Stack } from "@mui/material";
 import SiteHeader from "./components/SiteHeader";
 import SiteBody from "./components/SiteBody";
 import QueryDrawer from "./components/query-drawer/QueryDrawer";

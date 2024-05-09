@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Paper } from "@mui/material";
+import { Stack } from "@mui/material";
 import SelectButton from "./SelectButton";
 import queries from "../../data/queries";
 import SQLQuery from "../SQLQuery";

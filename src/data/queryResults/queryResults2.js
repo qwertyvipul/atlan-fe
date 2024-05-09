@@ -1,4 +1,4 @@
-export default {
+const queryResults = {
     query: `SELECT * FROM Products
     ORDER BY Price;`,
     results: [
@@ -68,3 +68,5 @@ export default {
         },
     ],
 };
+
+export default queryResults;

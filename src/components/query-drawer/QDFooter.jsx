@@ -1,6 +1,5 @@
 import React from "react";
 import QDCloseButton from "./QDCloseButton";
-import { Box, Stack } from "@mui/material";
 
 export default function QDFooter(props) {
     return (

@@ -1,4 +1,4 @@
-export default {
+const queryResults = {
     query: `SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
     FROM Orders
     INNER JOIN Customers
@@ -986,3 +986,5 @@ export default {
         },
     ],
 };
+
+export default queryResults;

@@ -1,5 +1,4 @@
 import React from "react";
-import queries from "../../data/queries";
 import SBQuery from "./SBQuery";
 import SBGrid from "./SBGrid";
 
