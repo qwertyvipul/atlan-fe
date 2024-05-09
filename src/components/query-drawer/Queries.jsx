@@ -10,11 +10,9 @@ export default function Queries(props) {
             <Box
                 sx={{
                     "& .MuiPaper-root": {
-                        boxSizing: "border-box",
-                        margin: "0.5rem 0",
+                        margin: "0.5rem",
                         padding: "1rem",
                         width: "100%",
-                        alignItems: "center",
                     },
                 }}
             >

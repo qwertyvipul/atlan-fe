@@ -7,7 +7,6 @@ export default function QDFooter(props) {
         <div
             style={{
                 padding: "1rem 0",
-                borderTop: "1px solid black",
                 textAlign: "center",
             }}
         >

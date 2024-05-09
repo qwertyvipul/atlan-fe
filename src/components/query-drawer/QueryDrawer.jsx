@@ -13,18 +13,35 @@ export default function QueryDrawer(props) {
                     height: "100vh",
                     position: "fixed",
                     top: "0",
-                    width: "100vw",
                 }}
                 onClick={props.onClose}
             >
                 <Drawer anchor="bottom" open={true}>
-                    <Container
-                        maxWidth="md"
-                        style={{ background: "lightblue" }}
-                    >
+                    <Container maxWidth="md">
                         <Stack>
-                            <Queries onQuerySelect={props.onQuerySelect} />
-                            <QDFooter onClick={props.onClose} />
+                            <div
+                                style={{
+                                    maxHeight: "100vh",
+                                    padding: "2px",
+                                }}
+                            >
+                                <Queries onQuerySelect={props.onQuerySelect} />
+                                <QDFooter onClick={props.onClose} />
+                            </div>
+                            <div
+                                style={{
+                                    position: "fixed",
+                                    bottom: "0",
+                                    left: "0",
+                                    width: "100%",
+                                    background: "#fff",
+                                    borderTop: "1px solid #eee",
+                                }}
+                            >
+                                <Container maxWidth="md">
+                                    <QDFooter onClick={props.onClose} />
+                                </Container>
+                            </div>
                         </Stack>
                     </Container>
                 </Drawer>

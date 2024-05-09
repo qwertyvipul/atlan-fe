@@ -25,7 +25,7 @@ export default function SBGrid(props) {
         };
     });
     return (
-        <div style={{ background: "lightgreen" }}>
+        <div>
             <DataGrid
                 getRowId={(row) => row._idx}
                 rows={results}
@@ -41,6 +41,11 @@ export default function SBGrid(props) {
                     _idx: false,
                 }}
                 disableRowSelectionOnClick
+                sx={{
+                    "& .MuiDataGrid-columnHeaders > div": {
+                        background: "#ddd !important",
+                    },
+                }}
             />
         </div>
     );

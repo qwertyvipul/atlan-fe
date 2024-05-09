@@ -31,16 +31,24 @@ function App() {
                     setShowDrawer(false);
                 }}
             >
-                <Container maxWidth="md" style={{ background: "yellow" }}>
-                    <Stack>
+                <Stack>
+                    <Container maxWidth="md">
                         <SiteHeader openDrawer={openDrawer} />
+                    </Container>
+                    <div
+                        style={{
+                            width: "100vw",
+                            borderBottom: "1px solid #ddd",
+                        }}
+                    ></div>
+                    <Container maxWidth="md">
                         <SiteBody
                             queryID={queryID}
                             isDrawerOpen={showDrawer}
                             openDrawer={openDrawer}
                         />
-                    </Stack>
-                </Container>
+                    </Container>
+                </Stack>
             </div>
             {showDrawer && (
                 <QueryDrawer
