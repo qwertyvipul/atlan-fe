@@ -25,31 +25,24 @@ function App() {
 
     return (
         <div>
-            <div
-                style={{ height: "100vh" }}
-                onClick={(e) => {
-                    setShowDrawer(false);
-                }}
-            >
-                <Stack>
-                    <Container maxWidth="md">
-                        <SiteHeader openDrawer={openDrawer} />
-                    </Container>
-                    <div
-                        style={{
-                            width: "100vw",
-                            borderBottom: "1px solid #ddd",
-                        }}
-                    ></div>
-                    <Container maxWidth="md">
-                        <SiteBody
-                            queryID={queryID}
-                            isDrawerOpen={showDrawer}
-                            openDrawer={openDrawer}
-                        />
-                    </Container>
-                </Stack>
-            </div>
+            <Stack>
+                <Container maxWidth="md">
+                    <SiteHeader openDrawer={openDrawer} />
+                </Container>
+                <div
+                    style={{
+                        width: "100vw",
+                        borderBottom: "1px solid #ddd",
+                    }}
+                ></div>
+                <Container maxWidth="md">
+                    <SiteBody
+                        queryID={queryID}
+                        isDrawerOpen={showDrawer}
+                        openDrawer={openDrawer}
+                    />
+                </Container>
+            </Stack>
             {showDrawer && (
                 <QueryDrawer
                     onClose={closeDrawer}
