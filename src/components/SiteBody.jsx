@@ -4,7 +4,7 @@ import QueryAndGrid from "./site-body/QueryAndGrid";
 
 export default function SiteBody(props) {
     return (
-        <div style={{ height: "100%" }}>
+        <div>
             {props.queryID === null ? (
                 <div style={{ textAlign: "center", padding: "1rem 0" }}>
                     <GetStartedButton onClick={props.openDrawer} />
